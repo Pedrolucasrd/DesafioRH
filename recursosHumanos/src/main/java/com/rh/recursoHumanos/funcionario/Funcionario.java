@@ -21,7 +21,7 @@ public class Funcionario {
 
     private String sobrenome;
 
-    private String cargo;
+    private Cargo cargo;
 
     private Date dataInicio;
 

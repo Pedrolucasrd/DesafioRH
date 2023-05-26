@@ -41,6 +41,7 @@ public class FuncionarioController {
     }
 
     @DeleteMapping("/{id}")
+    @Transactional
     public void deletarFuncionario(@PathVariable("id") Integer id){
         var funcionarioResgatado = funcionarioRepository.getReferenceById(id);
         funcionarioResgatado.excluir();

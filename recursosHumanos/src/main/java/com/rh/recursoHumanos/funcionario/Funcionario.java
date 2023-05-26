@@ -25,7 +25,7 @@ public class Funcionario {
 
     private Date dataInicio;
 
-    private Boolean ativo;
+    private Boolean ativo = true;
 
     public void atualizar(Funcionario funcionario) {
         if(funcionario.getNome()!=null){
@@ -40,7 +40,6 @@ public class Funcionario {
         if(funcionario.getDataInicio()!=null){
             this.dataInicio = funcionario.getDataInicio();
         }
-
     }
 
     public void excluir() {
